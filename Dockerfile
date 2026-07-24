@@ -10,7 +10,7 @@ ARG HF_TOKEN=""
 # install custom nodes into comfyui
 RUN git clone https://github.com/scraed/LanPaint /comfyui/custom_nodes/LanPaint
 RUN git clone https://github.com/goodguy1963/ComfyUI-ThinkingLLM.git /comfyui/custom_nodes/comfyui-thinkingllm
-RUN git clone https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg.git
+RUN git clone https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg.git /comfyui/custom_nodes/ComfyUI-Inspyrenet-Rembg
 
 # Upgrade transformers library so that it knows how to read gemma4 architectures
 RUN pip install --no-cache-dir --upgrade transformers accelerate
